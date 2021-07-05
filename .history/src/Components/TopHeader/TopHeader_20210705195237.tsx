@@ -22,6 +22,7 @@ interface Props {
 }
 
 export default function TopHeader(props: Props) {
+  const isLeftDisabled = !props.isBefore ? styles.disableNavigator : undefined;
   const isToday = props.isToday;
   return (
     <div className={clsx(styles.root, props.topHeaderContainerStyle)}>
@@ -38,7 +39,7 @@ export default function TopHeader(props: Props) {
             </div>
           ) : undefined}
           <div
-            className={clsx(styles.navigatorInnerWrap)}
+            className={clsx(styles.navigatorInnerWrap, isLeftDisabled)}
             onClick={props.onPrev}
           >
             <span className={clsx(styles.leftArrow, styles.blockSpan)}>
