@@ -1,0 +1,84 @@
+/**
+ * --------------------------------------------------------------------------
+ * Scheduler-calendar : Calendar.module.css
+ * Licensed under MIT (https://github.com/stead-global/scheduler-calendar/blob/master/LICENSE)
+ * --------------------------------------------------------------------------
+ */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.justifyContentSpaceBtw {
+  justify-content: space-between;
+  display: flex;
+}
+
+.blockSpan {
+  display: block;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 10px;
+  margin-top: -5px;
+  user-select: none;
+}
+
+.showMoreText {
+  text-align: center;
+}
+.showMoreText svg {
+  color: #5096e5;
+  transform: rotate(-90deg);
+}
+
+.showMoreWrap {
+  display: flex;
+  align-items: center;
+  color: #909499;
+  font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+.showMoreWrap::after {
+  display: block;
+  content: '';
+  width: 100%;
+  border-top: 1.5px dotted #afb2b6;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
+.showMore {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, #F9F9FA 70%);
+  height: 156px;
+}
+
+.showMoreSvg {
+  height: 9px;
+  width: 6px;
+}
+
+.showMoreSvgWrap {
+  display: flex;
+  color: #afb2b6;
+  margin-left: 5px;
+  transform: rotate(-90deg);
+}

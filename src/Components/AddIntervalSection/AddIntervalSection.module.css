@@ -1,0 +1,336 @@
+/**
+ * --------------------------------------------------------------------------
+ * Scheduler-calendar : AddIntervalSection.module.css
+ * Licensed under MIT (https://github.com/stead-global/scheduler-calendar/blob/master/LICENSE)
+ * --------------------------------------------------------------------------
+ */
+
+/* interval */
+.root {
+  width: 100%;
+  padding: 30px 16px 25px 16px;
+}
+
+@media screen and (min-width: 500px) {
+  .root {
+    padding: 30px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .btnInnerWrap {
+    min-width: 100%;
+    margin: 0 -5px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btnInnerWrap .largeBtn {
+    margin: 0 5px;
+    margin-bottom: 20px !important;
+  }
+}
+
+.container {
+  display: flex;
+}
+
+.modalTitle {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333333;
+  font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 36px;
+  text-align: center;
+}
+
+.form {
+  margin: 0;
+  display: flex;
+}
+
+.formBlock {
+  width: 100%;
+}
+
+.formRow {
+  margin-bottom: 10px;
+}
+
+.marginRight10 {
+  margin-right: 10px;
+}
+
+.marginRight25 {
+  margin-right: 25px;
+}
+
+.timeInput {
+  border: 2px solid #D8DBE0;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  width: 45%;
+  padding: 0 20px;
+  color: #121a24;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0;
+  font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  line-height: 32px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  -webkit-appearance: none;
+}
+
+.timeInput::placeholder {
+  line-height: 20px;
+  font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  color: #C5C8CD;
+  font-size: 14px;
+  letter-spacing: -0.21px;
+}
+
+.timeInput:focus:hover,
+.timeInput:focus {
+  outline: none;
+  border-color: #5096e5;
+}
+
+.timeInput.error,
+.timeInput.error:hover {
+  border-color: #ed4545;
+}
+
+.timeInput:hover {
+  border-color: #afb2b6;
+}
+
+.addBtn {
+  color: #3D8DF5;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.19px;
+  line-height: 22px;
+  font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  cursor: pointer;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.addBtn svg {
+  margin-right: 7px;
+}
+
+.emptyWrap {
+  width: 100%;
+  display: flex;
+  height: 54px;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #d7d8da;
+  color: #d7d8da;
+  font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  line-height: 32px;
+  font-size: 17px;
+  letter-spacing: 0;
+  margin-bottom: 10px;
+}
+
+.timeTitleWrap {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  margin-bottom: 8px;
+  color: #5A6370;
+  font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.22px;
+  line-height: 22px
+}
+
+.timeTitleWrap .timeFrom,
+.timeTitleWrap .timeTo {
+  width: 45%;
+  text-align: left;
+}
+
+.timeTitleWrap .timeFrom {
+  margin-right: 10px;
+}
+
+.unavailableBtnWrap {
+  display: flex;
+}
+
+.unavailableBtnWrap .unavailableBtn {
+  height: 36px;
+  padding: 0 20px;
+  width: 100%;
+  justify-content: center;
+  border-radius: 6px;
+  background-color: #EDEEF2;
+  color: #333333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.19px;
+  line-height: 17px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.unavailableBtn:hover {
+  background-color: #E3E3E5;
+}
+
+.unavailableDisabledBtn {
+  pointer-events: none;
+  opacity: 0.5;
+  color: #d7d8da;
+}
+
+.btnWrap {
+  width: 100%;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btnWrap .largeBtn {
+  width: 100%;
+  color: #ffffff;
+  border: 2px solid rgba(34,104,224,0.46);
+  border-radius: 6px;
+  background-color: #3D8DF5;
+  line-height: 21px;
+  font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.22px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.largeBtn:focus {
+  outline: none;
+  background-color: #3d80cb;
+}
+.largeBtn:hover {
+  background-color: #5096E5;
+}
+
+.largeBtn:active {
+  background-color: #3d80cb;
+}
+
+.errorMsg {
+  color: #ed4545;
+  margin-top: 5px;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 15px;
+  font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+}
+
+.deleteIcon {
+  display: flex;
+  align-items: center;
+  color: #C5C8CD;
+  cursor: pointer;
+}
+
+.deleteIcon svg {
+  height: 20px;
+  width: 20px;
+}
+
+.deleteIcon:hover {
+  color: #646970;
+}
+.deleteIcon:active {
+  color: #646970;
+}
+
+.applyMultiple {
+  color: #3D8DF5;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.19px;
+  font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  line-height: 22px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.applyMultiple:focus {
+  outline: none;
+}
+
+.applyMultiple:hover {
+  color: #69a9f2;
+}
+
+
+@media screen and (max-width: 370px) {
+  .timeInput {
+    width: 40%;
+    padding: 0 5px;
+  }
+
+  .timeTitleWrap .timeFrom,
+  .timeTitleWrap .timeTo {
+    width: 40%;
+  }
+
+  .unavailableBtnWrap .unavailableBtn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+/* Apply Multiple */
+
+.applyContainer {
+  width: 100%;
+  position: relative;
+}
+
+.applyTitle {
+  color: #333333;
+
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 36px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.backArrow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #646970;
+  cursor: pointer;
+}
+
+.backArrow:hover {
+  color: #121a24;
+}

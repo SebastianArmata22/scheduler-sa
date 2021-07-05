@@ -1,0 +1,182 @@
+/**
+ * --------------------------------------------------------------------------
+ * Scheduler-calendar : TableContent.module.css
+ * Licensed under MIT (https://github.com/stead-global/scheduler-calendar/blob/master/LICENSE)
+ * --------------------------------------------------------------------------
+ */
+
+.td {
+  width: 14.28571429%;
+  height: 156px;
+  padding: 10px 0;
+  position: relative;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #333333;
+}
+
+.tdSmall {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  position: relative;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #333333;
+}
+
+.dayNumberSmallScreen {
+  width: 10%;
+  justify-content: flex-end;
+  text-align: center;
+  background-color: inherit;
+  display: flex;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+}
+
+.dayNumber {
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  line-height: 20px;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 19px;
+  text-align: center;
+}
+
+.dayWrapperSmall {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dayWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.disabledDay {
+  background-size: cover;
+  background-color: #EDEEF2;
+  background-repeat: no-repeat;
+  color: #8C94A1;
+}
+
+.intervalsWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intervalsWrapSmall {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lastWrap {
+  box-sizing: border-box;
+  pointer-events: none;
+  background-color: #ffffff;
+  height: 156px;
+  padding-bottom: 0;
+}
+
+.intervalMoreBlock {
+  display: flex;
+  padding-right: 3px;
+  margin-top: 16px;
+  width: 100%;
+  justify-content: flex-end;
+  font-size: 13px;
+  letter-spacing: 0;
+  font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  line-height: 15px;
+  color: #8C94A1;
+  font-weight: 500;
+}
+
+.intervalBlockSmall {
+  border-radius: 14px;
+  background-color: #F5F6F7;
+  padding: 0 14px;
+  color: #8C94A1;
+  font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.19px;
+  font-size: 14px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.intervalBlock {
+  border-radius: 14px;
+  background-color: #F5F6F7;
+  padding: 0 2px;
+  color: #8C94A1;
+  font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.19px;
+  font-size: 14px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 6px;
+}
+.intervalBlock:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .intervalBlock {
+    padding: 0 14px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .intervalBlock {
+    padding: 0 8px;
+  }
+}
+
+.blockClickEvents {
+  cursor: not-allowed;
+}
+
+
+.webScreenDayWrap {
+  margin-top: 16px;
+}
+
+.weekDayWrap {
+  width: 10%;
+  display: flex;
+  justify-content: flex-start;
+  color: #909499;
+  font-size: 14px;
+  letter-spacing: 0;
+  font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  line-height: 28px;
+}

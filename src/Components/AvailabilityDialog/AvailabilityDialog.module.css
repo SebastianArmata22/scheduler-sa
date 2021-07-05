@@ -1,0 +1,42 @@
+/**
+ * --------------------------------------------------------------------------
+ * Scheduler-calendar : AvailabilityDialog.module.css
+ * Licensed under MIT (https://github.com/stead-global/scheduler-calendar/blob/master/LICENSE)
+ * --------------------------------------------------------------------------
+ */
+
+
+.modalContainer {
+  width: 100%;
+}
+
+.modal {
+  background-color: #fafafc;
+  border-radius: 8px;
+  min-width: 100%;
+  box-sizing: border-box;
+  max-height: 80%;
+  position: relative;
+}
+
+@media screen and (min-width: 600px) {
+  .modal {
+    width: 500px;
+  }
+}
+
+.closeIcon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #909499;
+  cursor: pointer;
+}
+.closeIcon:hover {
+  color: #646970;
+}
+
+.closeIcon svg {
+  height: 24px;
+  width: 24px;
+}

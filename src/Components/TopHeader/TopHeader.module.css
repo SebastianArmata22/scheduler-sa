@@ -1,0 +1,142 @@
+/**
+ * --------------------------------------------------------------------------
+ * Scheduler-calendar : TopHeader.module.css
+ * Licensed under MIT (https://github.com/stead-global/scheduler-calendar/blob/master/LICENSE)
+ * --------------------------------------------------------------------------
+ */
+
+.justifyContentCenter {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.blockSpan {
+  display: block;
+}
+
+.topHeaderWrap {
+  margin-bottom: 50px;
+  user-select: none;
+}
+
+.availabilityTitle {
+  color: #405162;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0;
+  font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  line-height: 32px;
+  margin-bottom: 1px;
+}
+
+.topHeaderDateRange {
+  font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  color: #333333;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.26px;
+  line-height: 25px;
+}
+
+.topNavigatorsWrapper {
+  display: flex;
+  height: fit-content;
+}
+
+.topTodayTitle {
+  color: #707d8a;
+  font-size: 16px;
+  letter-spacing: 0;
+  font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  line-height: 20px;
+  text-align: center;
+  display: flex;
+  align-self: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.todayWrap {
+  height: 100%;
+  position: absolute;
+  left: -55px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+}
+
+.topHeaderNavigators {
+  border: 2px solid #d9dde0;
+  border-radius: 5px;
+  height: 38px;
+  box-sizing: border-box;
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* .navigatorInnerWrap:first-child {
+  border-right: 2px solid #d9dde0;
+} */
+
+.navigatorInnerWrap {
+  box-sizing: border-box;
+  width: 38px;
+  height: 38px;
+  color: #8C94A1;
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: #EDEEF2;
+
+}
+.navigatorInnerWrap span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navigatorInnerWrap:hover {
+  background-color: #f9f9fa;
+}
+
+.titleWrap {
+  min-width: 250px;
+  padding: 0 20px;
+}
+
+.leftArrowWrap {
+  position: relative;
+  height: 38px;
+}
+
+/* .navigatorInnerWrapRight {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+} */
+
+.leftArrow {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+.rightArrow {
+  width: 38px;
+  box-sizing: border-box;
+  transform: scaleX(-1);
+  height: 100%;
+  width: 100%;
+}
+
+.disableNavigator {
+  background-color: #fafafc !important;
+  pointer-events: none;
+  color: #d9dde0;
+  cursor: default;
+}
+
+.leftArrowSvg {
+  height: 14px;
+  width: 10px;
+}
