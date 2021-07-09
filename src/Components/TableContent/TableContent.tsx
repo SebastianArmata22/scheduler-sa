@@ -157,7 +157,7 @@ export default class TableContent extends React.Component<Props, State> {
                   this.props.intervalsWrapStyle
                 )}
                 style={this.props.intervalStyles}
-              >{`${startTime} ${endTime.trim() === "" ? "-" : ""} ${endTime}`}</span>
+              >{`${startTime} ${endTime.trim() === "" ? "" : "-"} ${endTime}`}</span>
             );
           } else {
             returnInterval.push("");
